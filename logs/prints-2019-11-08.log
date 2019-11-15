@@ -1,0 +1,6 @@
+12:19:42.927 [TestNG-tests-2] DEBUG scripts.TestValidLogin - Fetching the details from Excel sheet
+12:19:45.462 [TestNG-tests-2] INFO  scripts.TestValidLogin - DataFetched successfully
+12:19:48.207 [TestNG-tests-1] DEBUG scripts.TestValidLogin - create the object of pom login page
+12:19:48.209 [TestNG-tests-1] INFO  scripts.TestValidLogin - object created successfully
+12:19:48.209 [TestNG-tests-1] DEBUG scripts.TestValidLogin - Fetching the details from Excel sheet
+12:19:48.296 [TestNG-tests-1] INFO  scripts.TestValidLogin - DataFetched successfully

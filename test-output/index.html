@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\MadhurVK\eclipse-workspace\UnisysTestAutomation\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="scripts.TestValidLogin" hash-for-method="validLogin">validLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="scripts.TestValidLogin" hash-for-method="validLogin">validLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">scripts.TestValidLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLogin">
+                  </a> <!-- validLogin -->
+                  <span class="method-name">validLogin</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [https://inteliserve.unisys] but found [https://inteliserve.unisys.com/demo/dashboard]
+	at scripts.TestValidLogin.validLogin(TestValidLogin.java:35)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLogin">
+                  </a> <!-- validLogin -->
+                  <span class="method-name">validLogin</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [https://inteliserve.unisys] but found [https://inteliserve.unisys.com/demo/dashboard#access_token=eyJraWQiOiIwamR1RkJHTXZsbEdHUHBHd0NqdlB0cldhdXlIWk96TjJiSGNiT3lxbktjPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIxNzUwYzE3My1lZjBhLTQ1ZTAtOWJkYy0wZDVkZDA2YWUzODYiLCJjb2duaXRvOmdyb3VwcyI6WyJ1cy1lYXN0LTFfQUd5ME8xRHFvX0ludGVsaUFwcEdyeW1hdHRlckF1dGgwIl0sInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoib3BlbmlkIGVtYWlsIiwiYXV0aF90aW1lIjoxNTUwNzYyMDA0LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9BR3kwTzFEcW8iLCJleHAiOjE1NTA3NjU2MDQsImlhdCI6MTU1MDc2MjAwNCwidmVyc2lvbiI6MiwianRpIjoiZjgzODk2NDctMjNjOC00YTJjLTk4OWItMDVjZDUwNmRiYjg4IiwiY2xpZW50X2lkIjoiM2FqOG1qMGptZDk5MHU1M2ViaTU3Y3Q4bjgiLCJ1c2VybmFtZSI6IkludGVsaUFwcEdyeW1hdHRlckF1dGgwX2F1dGgwfDViYzczOWZkYzA3YTM1N2FlN2VjNGUzNCJ9.a6ZXpRVq1t8xQHNhgJc1tXPMXQwljJSo9nylGa-f8hbPuo2ake0tXm6bfwG1fjzzIz2nYxZAznW4C5-YanGSUR87YcwyuMXb-XwK0VnS1RJHf5pNnXnJJx70S5KLJ7ScrBHyDPqXsHZmDtxV9oGar-VBBsoHqoJ0Kn1nQI0Pn7VIsHd_iaTgDOoufQFhXKklCYZZoDc_i8homkjnnuMkUAB16sYvytlgXldjeNGhqQn_mE-BDlQgiT9hOy1leyHF5IIOvYOSTEGO6Yrmkk-XcZlo0J6pvXc82ONPFq4fjt41kmsaB2MPEDwx8DXNZqi23I-pFX7OUm7ZU1Uh55d0mg&amp;id_token=eyJraWQiOiJ1RTVxbVwvdk5PemtyWjFKWFBYSXkzY3hwaE00M25rNjBvV1Vsb0I3emt0RT0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiSVFpam5SZU9rLTFFNlY1d3h6cEt6ZyIsInN1YiI6IjE3NTBjMTczLWVmMGEtNDVlMC05YmRjLTBkNWRkMDZhZTM4NiIsImNvZ25pdG86Z3JvdXBzIjpbInVzLWVhc3QtMV9BR3kwTzFEcW9fSW50ZWxpQXBwR3J5bWF0dGVyQXV0aDAiXSwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9BR3kwTzFEcW8iLCJjb2duaXRvOnVzZXJuYW1lIjoiSW50ZWxpQXBwR3J5bWF0dGVyQXV0aDBfYXV0aDB8NWJjNzM5ZmRjMDdhMzU3YWU3ZWM0ZTM0IiwiYXVkIjoiM2FqOG1qMGptZDk5MHU1M2ViaTU3Y3Q4bjgiLCJpZGVudGl0aWVzIjpbeyJ1c2VySWQiOiJhdXRoMHw1YmM3MzlmZGMwN2EzNTdhZTdlYzRlMzQiLCJwcm92aWRlck5hbWUiOiJJbnRlbGlBcHBHcnltYXR0ZXJBdXRoMCIsInByb3ZpZGVyVHlwZSI6IlNBTUwiLCJpc3N1ZXIiOiJ1cm46aW50ZWxsaWFwcC5hdXRoMC5jb20iLCJwcmltYXJ5IjoidHJ1ZSIsImRhdGVDcmVhdGVkIjoiMTU0MDM0NjEzOTE1NCJ9XSwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NTA3NjIwMDQsImV4cCI6MTU1MDc2NTYwNCwiaWF0IjoxNTUwNzYyMDA0LCJlbWFpbCI6InJ5YW5AZ3J5bWF0dGVyLmNvbSJ9.ZZ1k6n9siToc6ZpbZRG6F0EFK5UzJ68RCTYN1LAGGlYiO54rIdZcoGmaGRPdFVLMy0RnBgOsEKxv8-W7e1heoJj3GHJezXpney80GhxVhpFvu2HjXMNJpzrHBefKJMrjX5EjErFIH8ERGhCM87cupf9MYJSAo0jc3Rnf81R0nAsbvNI4uoyKp_USMKldliDPdRINR74PcJnp04e_Jk4gZ-lVi_xIYHdqBG5WtaexD-IvD5hizNMteywyLKTUTAc5nnTLZOtiAQqwveePIWcF6keJxpMo59p8_liQc5gB4y-vog61U-KRraNQguHIAbUh8Nk-ViPxeAtR2p9Ywt5RtA&amp;token_type=Bearer&amp;expires_in=3600]
+	at scripts.TestValidLogin.validLogin(TestValidLogin.java:35)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\MadhurVK\eclipse-workspace\UnisysTestAutomation\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;FirefoxTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;scripts.TestValidLogin&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;scripts.TestValidLogin&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">FirefoxTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ChromeTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validLogin')
+data.setCell(0, 2, 'scripts.TestValidLogin')
+data.setCell(0, 3, 12762);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validLogin')
+data.setCell(1, 2, 'scripts.TestValidLogin')
+data.setCell(1, 3, 11692);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">https://inteliserve.unisys.com/demo/dashboard</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">https://inteliserve.unisys.com/demo/dashboard#access_token=eyJraWQiOiIwamR1RkJHTXZsbEdHUHBHd0NqdlB0cldhdXlIWk96TjJiSGNiT3lxbktjPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIxNzUwYzE3My1lZjBhLTQ1ZTAtOWJkYy0wZDVkZDA2YWUzODYiLCJjb2duaXRvOmdyb3VwcyI6WyJ1cy1lYXN0LTFfQUd5ME8xRHFvX0ludGVsaUFwcEdyeW1hdHRlckF1dGgwIl0sInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoib3BlbmlkIGVtYWlsIiwiYXV0aF90aW1lIjoxNTUwNzYyMDA0LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9BR3kwTzFEcW8iLCJleHAiOjE1NTA3NjU2MDQsImlhdCI6MTU1MDc2MjAwNCwidmVyc2lvbiI6MiwianRpIjoiZjgzODk2NDctMjNjOC00YTJjLTk4OWItMDVjZDUwNmRiYjg4IiwiY2xpZW50X2lkIjoiM2FqOG1qMGptZDk5MHU1M2ViaTU3Y3Q4bjgiLCJ1c2VybmFtZSI6IkludGVsaUFwcEdyeW1hdHRlckF1dGgwX2F1dGgwfDViYzczOWZkYzA3YTM1N2FlN2VjNGUzNCJ9.a6ZXpRVq1t8xQHNhgJc1tXPMXQwljJSo9nylGa-f8hbPuo2ake0tXm6bfwG1fjzzIz2nYxZAznW4C5-YanGSUR87YcwyuMXb-XwK0VnS1RJHf5pNnXnJJx70S5KLJ7ScrBHyDPqXsHZmDtxV9oGar-VBBsoHqoJ0Kn1nQI0Pn7VIsHd_iaTgDOoufQFhXKklCYZZoDc_i8homkjnnuMkUAB16sYvytlgXldjeNGhqQn_mE-BDlQgiT9hOy1leyHF5IIOvYOSTEGO6Yrmkk-XcZlo0J6pvXc82ONPFq4fjt41kmsaB2MPEDwx8DXNZqi23I-pFX7OUm7ZU1Uh55d0mg&id_token=eyJraWQiOiJ1RTVxbVwvdk5PemtyWjFKWFBYSXkzY3hwaE00M25rNjBvV1Vsb0I3emt0RT0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiSVFpam5SZU9rLTFFNlY1d3h6cEt6ZyIsInN1YiI6IjE3NTBjMTczLWVmMGEtNDVlMC05YmRjLTBkNWRkMDZhZTM4NiIsImNvZ25pdG86Z3JvdXBzIjpbInVzLWVhc3QtMV9BR3kwTzFEcW9fSW50ZWxpQXBwR3J5bWF0dGVyQXV0aDAiXSwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9BR3kwTzFEcW8iLCJjb2duaXRvOnVzZXJuYW1lIjoiSW50ZWxpQXBwR3J5bWF0dGVyQXV0aDBfYXV0aDB8NWJjNzM5ZmRjMDdhMzU3YWU3ZWM0ZTM0IiwiYXVkIjoiM2FqOG1qMGptZDk5MHU1M2ViaTU3Y3Q4bjgiLCJpZGVudGl0aWVzIjpbeyJ1c2VySWQiOiJhdXRoMHw1YmM3MzlmZGMwN2EzNTdhZTdlYzRlMzQiLCJwcm92aWRlck5hbWUiOiJJbnRlbGlBcHBHcnltYXR0ZXJBdXRoMCIsInByb3ZpZGVyVHlwZSI6IlNBTUwiLCJpc3N1ZXIiOiJ1cm46aW50ZWxsaWFwcC5hdXRoMC5jb20iLCJwcmltYXJ5IjoidHJ1ZSIsImRhdGVDcmVhdGVkIjoiMTU0MDM0NjEzOTE1NCJ9XSwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NTA3NjIwMDQsImV4cCI6MTU1MDc2NTYwNCwiaWF0IjoxNTUwNzYyMDA0LCJlbWFpbCI6InJ5YW5AZ3J5bWF0dGVyLmNvbSJ9.ZZ1k6n9siToc6ZpbZRG6F0EFK5UzJ68RCTYN1LAGGlYiO54rIdZcoGmaGRPdFVLMy0RnBgOsEKxv8-W7e1heoJj3GHJezXpney80GhxVhpFvu2HjXMNJpzrHBefKJMrjX5EjErFIH8ERGhCM87cupf9MYJSAo0jc3Rnf81R0nAsbvNI4uoyKp_USMKldliDPdRINR74PcJnp04e_Jk4gZ-lVi_xIYHdqBG5WtaexD-IvD5hizNMteywyLKTUTAc5nnTLZOtiAQqwveePIWcF6keJxpMo59p8_liQc5gB4y-vog61U-KRraNQguHIAbUh8Nk-ViPxeAtR2p9Ywt5RtA&token_type=Bearer&expires_in=3600</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.TestValidLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setExtent</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">openApplication(firefox)</span>
+                <span class="method-start">518 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validLogin</span>
+                <span class="method-start">14082 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser([TestResult name=validLogin status=FAILURE method=TestValidLogin.validLogin()[pri:0, instance:script...)</span>
+                <span class="method-start">25777 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test before">
+                <span class="method-name">setExtent</span>
+                <span class="method-start">26682 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">openApplication(chrome)</span>
+                <span class="method-start">26685 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validLogin</span>
+                <span class="method-start">33628 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser([TestResult name=validLogin status=FAILURE method=TestValidLogin.validLogin()[pri:0, instance:script...)</span>
+                <span class="method-start">46394 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

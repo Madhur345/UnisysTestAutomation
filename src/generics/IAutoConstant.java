@@ -1,0 +1,14 @@
+package generics;
+
+	public interface IAutoConstant {
+
+		String GECKO_KEY="webdriver.gecko.driver";
+		String GECKO_VALUE="./driver/geckodriver.exe";
+
+		String CHROME_KEY="webdriver.chrome.driver";
+		String CHROME_VALUE="./driver/chromedriver.exe";
+
+		String EXCEL_PATH="./testdata/inputdata.xlsx";
+		String CONFIG_PATH="./testdata/config.properties";
+	}
+
