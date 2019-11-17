@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 14 17:18:01 IST 2019</td>
+<td>Started on:</td><td>Sun Nov 17 09:49:58 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>26 seconds (26613 ms)</td>
+<tr><td>Total time:</td><td>37 seconds (37384 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,22 +75,58 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='scripts.TestValidLogin.validLogin()'><b>validLogin</b><br>Test class: scripts.TestValidLogin<br/>
-<a href="#Output-1627883152" onClick='toggleBox("Output-1627883152", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1627883152" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1627883152">
-https://inteliserve.unisys.com/demo/dashboard<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [https://inteliserve.unisys] but found [https://inteliserve.unisys.com/demo/dashboard]
-	at scripts.TestValidLogin.validLogin(TestValidLogin.java:35)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1627883152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1627883152'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [https://inteliserve.unisys] but found [https://inteliserve.unisys.com/demo/dashboard]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at scripts.TestValidLogin.validLogin(TestValidLogin.java:35)
+<td title='scripts.TestValidLogin.validLogin()'><b>validLogin</b><br>Test class: scripts.TestValidLogin</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[@type=&apos;subm&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;IN-MADHURVK-1&apos;, ip: &apos;192.168.0.26&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 29976, moz:profile: C:\Users\MadhurVK\AppData\L..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e2b28f3e-6d24-48b1-b77c-76f8a9fb052f
+*** Element info: {Using=xpath, value=//button[@type=&apos;subm&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at pompages.LoginPage.clickLogin(LoginPage.java:38)
+	at scripts.TestValidLogin.validLogin(TestValidLogin.java:31)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace633131207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace633131207'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[@type=&apos;subm&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;IN-MADHURVK-1&apos;, ip: &apos;192.168.0.26&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 29976, moz:profile: C:\Users\MadhurVK\AppData\L..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e2b28f3e-6d24-48b1-b77c-76f8a9fb052f
+*** Element info: {Using=xpath, value=//button[@type=&apos;subm&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at pompages.LoginPage.clickLogin(LoginPage.java:38)
+	at scripts.TestValidLogin.validLogin(TestValidLogin.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -117,8 +153,8 @@ https://inteliserve.unisys.com/demo/dashboard<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>11</td>
-<td>scripts.TestValidLogin@335eadca</td></tr>
+<td>18</td>
+<td>scripts.TestValidLogin@5ad851c9</td></tr>
 </table><p>
 </body>
 </html>

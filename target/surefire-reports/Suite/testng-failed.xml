@@ -2,16 +2,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <test name="ChromeTest(failed)">
-    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="scripts.TestValidLogin">
         <methods>
           <include name="openApplication"/>
+          <include name="endReport"/>
           <include name="validLogin"/>
-          <include name="setExtent"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- scripts.TestValidLogin -->
+      <class name="scripts.TestLoginWithoutValidation">
+        <methods>
+          <include name="openApplication"/>
+          <include name="endReport"/>
+          <include name="validLoginValidatioin"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- scripts.TestLoginWithoutValidation -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

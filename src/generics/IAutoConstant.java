@@ -10,5 +10,7 @@ package generics;
 
 		String EXCEL_PATH="./testdata/inputdata.xlsx";
 		String CONFIG_PATH="./testdata/config.properties";
+		
+		String REPORTS_CONFIG_PATH="./testdata/ReportsConfig.xml";
 	}
 

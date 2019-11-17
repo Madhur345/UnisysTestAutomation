@@ -43,7 +43,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nov 14, 2019 05:18:28 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Nov 16, 2019 10:34:55 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -58,8 +58,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -102,10 +101,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -123,32 +122,17 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>This is Title Section</span>
-						<span class='test-time'>Nov 14, 2019 05:18:30 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Nov 14, 2019 05:18:30 PM</span>
-	<span class='label end-time'>Nov 14, 2019 05:18:30 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-<div class='test-desc'>This is Description Section  Browser Name: chromeBrowser Version = 62.0.3202.94 </div>
-					</div>
-				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>scripts.TestValidLogin</span>
-						<span class='test-time'>Nov 14, 2019 05:18:35 PM</span>
+						<span class='test-time'>Nov 16, 2019 10:35:02 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 14, 2019 05:18:35 PM</span>
-	<span class='label end-time'>Nov 14, 2019 05:18:48 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+764ms</span>
+	<span class='label start-time'>Nov 16, 2019 10:35:02 AM</span>
+	<span class='label end-time'>Nov 16, 2019 10:35:23 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+144ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -162,15 +146,23 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>5:18:35 PM</td>
+				<td class='timestamp'>10:35:02 AM</td>
 				<td class='step-details'>
 						Starting Testing
 					
 				</td>
 			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:35:23 AM</td>
+				<td class='step-details'>
+						URL didn't match
+					
+				</td>
+			</tr>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>5:18:48 PM</td>
+				<td class='timestamp'>10:35:23 AM</td>
 				<td class='step-details'>
 						TEST CASE FAILED IS validLogin
 					
@@ -178,10 +170,10 @@
 			</tr>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>5:18:48 PM</td>
+				<td class='timestamp'>10:35:23 AM</td>
 				<td class='step-details'>
 						TEST CASE FAILED IS java.lang.AssertionError: The following asserts failed:
-	expected [https://inteliserve.unisys] but found [https://inteliserve.unisys.com/demo/dashboard#access_token=eyJraWQiOiIwamR1RkJHTXZsbEdHUHBHd0NqdlB0cldhdXlIWk96TjJiSGNiT3lxbktjPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIxNzUwYzE3My1lZjBhLTQ1ZTAtOWJkYy0wZDVkZDA2YWUzODYiLCJjb2duaXRvOmdyb3VwcyI6WyJ1cy1lYXN0LTFfQUd5ME8xRHFvX0ludGVsaUFwcEdyeW1hdHRlckF1dGgwIl0sInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoib3BlbmlkIGVtYWlsIiwiYXV0aF90aW1lIjoxNTUwNzYyMDA0LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9BR3kwTzFEcW8iLCJleHAiOjE1NTA3NjU2MDQsImlhdCI6MTU1MDc2MjAwNCwidmVyc2lvbiI6MiwianRpIjoiZjgzODk2NDctMjNjOC00YTJjLTk4OWItMDVjZDUwNmRiYjg4IiwiY2xpZW50X2lkIjoiM2FqOG1qMGptZDk5MHU1M2ViaTU3Y3Q4bjgiLCJ1c2VybmFtZSI6IkludGVsaUFwcEdyeW1hdHRlckF1dGgwX2F1dGgwfDViYzczOWZkYzA3YTM1N2FlN2VjNGUzNCJ9.a6ZXpRVq1t8xQHNhgJc1tXPMXQwljJSo9nylGa-f8hbPuo2ake0tXm6bfwG1fjzzIz2nYxZAznW4C5-YanGSUR87YcwyuMXb-XwK0VnS1RJHf5pNnXnJJx70S5KLJ7ScrBHyDPqXsHZmDtxV9oGar-VBBsoHqoJ0Kn1nQI0Pn7VIsHd_iaTgDOoufQFhXKklCYZZoDc_i8homkjnnuMkUAB16sYvytlgXldjeNGhqQn_mE-BDlQgiT9hOy1leyHF5IIOvYOSTEGO6Yrmkk-XcZlo0J6pvXc82ONPFq4fjt41kmsaB2MPEDwx8DXNZqi23I-pFX7OUm7ZU1Uh55d0mg&id_token=eyJraWQiOiJ1RTVxbVwvdk5PemtyWjFKWFBYSXkzY3hwaE00M25rNjBvV1Vsb0I3emt0RT0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiSVFpam5SZU9rLTFFNlY1d3h6cEt6ZyIsInN1YiI6IjE3NTBjMTczLWVmMGEtNDVlMC05YmRjLTBkNWRkMDZhZTM4NiIsImNvZ25pdG86Z3JvdXBzIjpbInVzLWVhc3QtMV9BR3kwTzFEcW9fSW50ZWxpQXBwR3J5bWF0dGVyQXV0aDAiXSwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9BR3kwTzFEcW8iLCJjb2duaXRvOnVzZXJuYW1lIjoiSW50ZWxpQXBwR3J5bWF0dGVyQXV0aDBfYXV0aDB8NWJjNzM5ZmRjMDdhMzU3YWU3ZWM0ZTM0IiwiYXVkIjoiM2FqOG1qMGptZDk5MHU1M2ViaTU3Y3Q4bjgiLCJpZGVudGl0aWVzIjpbeyJ1c2VySWQiOiJhdXRoMHw1YmM3MzlmZGMwN2EzNTdhZTdlYzRlMzQiLCJwcm92aWRlck5hbWUiOiJJbnRlbGlBcHBHcnltYXR0ZXJBdXRoMCIsInByb3ZpZGVyVHlwZSI6IlNBTUwiLCJpc3N1ZXIiOiJ1cm46aW50ZWxsaWFwcC5hdXRoMC5jb20iLCJwcmltYXJ5IjoidHJ1ZSIsImRhdGVDcmVhdGVkIjoiMTU0MDM0NjEzOTE1NCJ9XSwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NTA3NjIwMDQsImV4cCI6MTU1MDc2NTYwNCwiaWF0IjoxNTUwNzYyMDA0LCJlbWFpbCI6InJ5YW5AZ3J5bWF0dGVyLmNvbSJ9.ZZ1k6n9siToc6ZpbZRG6F0EFK5UzJ68RCTYN1LAGGlYiO54rIdZcoGmaGRPdFVLMy0RnBgOsEKxv8-W7e1heoJj3GHJezXpney80GhxVhpFvu2HjXMNJpzrHBefKJMrjX5EjErFIH8ERGhCM87cupf9MYJSAo0jc3Rnf81R0nAsbvNI4uoyKp_USMKldliDPdRINR74PcJnp04e_Jk4gZ-lVi_xIYHdqBG5WtaexD-IvD5hizNMteywyLKTUTAc5nnTLZOtiAQqwveePIWcF6keJxpMo59p8_liQc5gB4y-vog61U-KRraNQguHIAbUh8Nk-ViPxeAtR2p9Ywt5RtA&token_type=Bearer&expires_in=3600]
+	expected [https://inteliserve.unisys] but found [https://inteliserve.unisys.com/demo/dashboard]
 					
 				</td>
 			</tr>
@@ -189,7 +181,7 @@
 	</table>
 </div>
 						<ul class='screenshots'>
-							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\MadhurVK\eclipse-workspace\UnisysTestAutomation/screenshots/_validLoginThu Nov 14 17_18_48 IST 2019.png' src='C:\Users\MadhurVK\eclipse-workspace\UnisysTestAutomation/screenshots/_validLoginThu Nov 14 17_18_48 IST 2019.png' data-src='C:\Users\MadhurVK\eclipse-workspace\UnisysTestAutomation/screenshots/_validLoginThu Nov 14 17_18_48 IST 2019.png'></li>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\MadhurVK\eclipse-workspace\UnisysTestAutomation/screenshots/_validLoginSat Nov 16 10_35_23 IST 2019.png' src='C:\Users\MadhurVK\eclipse-workspace\UnisysTestAutomation/screenshots/_validLoginSat Nov 16 10_35_23 IST 2019.png' data-src='C:\Users\MadhurVK\eclipse-workspace\UnisysTestAutomation/screenshots/_validLoginSat Nov 16 10_35_23 IST 2019.png'></li>
 						</ul>
 					</div>
 				</li>
@@ -222,7 +214,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -234,13 +226,13 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 14, 2019 05:18:28 PM</div>
+					<div class='panel-lead'>Nov 16, 2019 10:34:55 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 14, 2019 05:18:28 PM</div>
+			 		<div class='panel-lead'>Nov 16, 2019 10:34:55 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -281,7 +273,7 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-				passParent: 1,
+				passParent: 0,
 				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
@@ -312,7 +304,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "This is Title Section":0,"scripts.TestValidLogin":12.764
+			        "scripts.TestValidLogin":21.144
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/e9ccc29bd18c7914697075f44948d0913e462478/v3html/js/extent.js' type='text/javascript'></script>

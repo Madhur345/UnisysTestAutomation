@@ -4,6 +4,8 @@ package scripts;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 import generics.BaseTest;
 import generics.Lib;
 import pompages.LoginPage;
@@ -13,11 +15,11 @@ public class TestLoginWithoutValidation extends BaseTest {
 	@Test
 	public void validLoginValidatioin() throws InterruptedException{
 
-		test = extent.createTest("Login to inteliApp Desktop");
+		extentTest = extent.startTest(TestLoginWithoutValidation.class.getName());
 		LoginPage lp = new LoginPage(driver);
 		String username = Lib.getcellValue("ValidLogin",1,0);
 
-		test.info("Starting Testing");
+		extentTest.log(LogStatus.INFO,"Starting Testing");
 		lp.setUserName(username);
 		Thread.sleep(2000);
 		String firstName =Lib.getcellValue("ValidLogin",1,1);
@@ -33,7 +35,8 @@ public class TestLoginWithoutValidation extends BaseTest {
 		System.out.println(actualURL);
 		SoftAssert s = new SoftAssert();
 		s.assertEquals(actualURL, expectedURL);
+		extentTest.log(LogStatus.PASS,"Loggin successfully");
 		s.assertAll();
-		test.pass("Loggin successfully");
+		
 	}
 }
