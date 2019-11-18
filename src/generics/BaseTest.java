@@ -1,10 +1,8 @@
 package generics;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.mail.EmailException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,6 +10,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -19,13 +18,17 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class BaseTest implements IAutoConstant{
 	public WebDriver driver;
-	public static ExtentReports extent = ExtentManager.getInstance();
+	public static ExtentReports extent;
 	public static ExtentTest extentTest;
 	static{
 		System.setProperty(GECKO_KEY, GECKO_VALUE);
 		System.setProperty(CHROME_KEY, CHROME_VALUE);
 	}
 
+	@BeforeTest
+	public void setextent() {
+		extent=Lib.generateExtentReport();
+	}
 
 	@BeforeMethod
 	public  void openApplication(){
@@ -64,9 +67,9 @@ public class BaseTest implements IAutoConstant{
 		}
 		extent.endTest(extentTest);
 		driver.close();
-		
+
 	}
-	
+
 	@AfterTest
 	public void endReport(){
 		extent.flush();

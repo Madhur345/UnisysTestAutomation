@@ -7,6 +7,7 @@
         <methods>
           <include name="openApplication"/>
           <include name="endReport"/>
+          <include name="setextent"/>
           <include name="validLogin"/>
           <include name="closeBrowser"/>
         </methods>

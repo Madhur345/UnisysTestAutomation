@@ -12,6 +12,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import com.relevantcodes.extentreports.ExtentReports;
+
 public class Lib implements IAutoConstant{
 	public static Workbook wb;
 	public static String getcellValue(String Sheet,int row,int column){
@@ -45,10 +47,25 @@ public class Lib implements IAutoConstant{
 		return propertyValue;
 	}
 
+	public static ExtentReports generateExtentReport() {
+		ExtentReports extent =null;
+		try {
+			Date d = new Date();
+			String currentDate = d.toString().replaceAll(":","_");
+			//String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+			extent=new ExtentReports(System.getProperty("user.dir")+"/ExtentReports/"+"InteliServe Test Automation Report" +"_"+ currentDate + ".html", true);
+			extent.loadConfig(new File(System.getProperty("user.dir")+"/testdata/ReportsConfig.xml")); 
+			extent.addSystemInfo("Selenium Version", "3.7.1").addSystemInfo(
+					"Environment", "InteliServe_Test").addSystemInfo("User Name", "Vishal Madhur");
+		}catch(Exception e) {
+		}
+		return extent;
+	}
+
 	public static String captureScreenshots(WebDriver driver,String testCaseName){
 		Date d = new Date();
 		String currentDate = d.toString().replaceAll(":","_");
-		String screenShotPath = System.getProperty("user.dir") + "/screenshots/" +"_"+testCaseName+currentDate+".png";
+		String screenShotPath = System.getProperty("user.dir") + "/screenshots/" +testCaseName+"_"+currentDate+".png";
 		try{
 			TakesScreenshot ts = (TakesScreenshot)driver;
 			File srcFile=ts.getScreenshotAs(OutputType.FILE);

@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="1" total="3" passed="1">
+<testng-results skipped="0" failed="1" ignored="2" total="4" passed="1">
   <reporter-output>
     <line>
       <![CDATA[https://inteliserve.unisys.com/demo/dashboard]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="64291" started-at="2019-11-17T06:05:28Z" finished-at="2019-11-17T06:06:32Z">
+  <suite name="Suite" duration-ms="60126" started-at="2019-11-18T04:20:54Z" finished-at="2019-11-18T04:21:54Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="64291" started-at="2019-11-17T06:05:28Z" finished-at="2019-11-17T06:06:32Z">
+    <test name="ChromeTest" duration-ms="60126" started-at="2019-11-18T04:20:54Z" finished-at="2019-11-18T04:21:54Z">
       <class name="scripts.TestValidLogin">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:scripts.TestValidLogin@3b938003]" name="openApplication" is-config="true" duration-ms="11117" started-at="2019-11-17T11:35:28Z" finished-at="2019-11-17T11:35:39Z">
+        <test-method status="PASS" signature="setextent()[pri:0, instance:scripts.TestValidLogin@5f9d02cb]" name="setextent" is-config="true" duration-ms="333" started-at="2019-11-18T09:50:54Z" finished-at="2019-11-18T09:50:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setextent -->
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:scripts.TestValidLogin@5f9d02cb]" name="openApplication" is-config="true" duration-ms="8723" started-at="2019-11-18T09:50:55Z" finished-at="2019-11-18T09:51:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="FAIL" signature="validLogin()[pri:0, instance:scripts.TestValidLogin@3b938003]" name="validLogin" duration-ms="20739" started-at="2019-11-17T11:35:39Z" finished-at="2019-11-17T11:36:00Z">
+        <test-method status="FAIL" signature="validLogin()[pri:0, instance:scripts.TestValidLogin@5f9d02cb]" name="validLogin" duration-ms="21685" started-at="2019-11-18T09:51:03Z" finished-at="2019-11-18T09:51:25Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -59,36 +63,36 @@
             </line>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:scripts.TestValidLogin@3b938003]" name="closeBrowser" is-config="true" duration-ms="673" started-at="2019-11-17T11:36:00Z" finished-at="2019-11-17T11:36:01Z">
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:scripts.TestValidLogin@5f9d02cb]" name="closeBrowser" is-config="true" duration-ms="875" started-at="2019-11-18T09:51:25Z" finished-at="2019-11-18T09:51:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validLogin status=FAILURE method=TestValidLogin.validLogin()[pri:0, instance:scripts.TestValidLogin@3b938003] output=https://inteliserve.unisys.com/demo/dashboard]]]>
+                <![CDATA[[TestResult name=validLogin status=FAILURE method=TestValidLogin.validLogin()[pri:0, instance:scripts.TestValidLogin@5f9d02cb] output=https://inteliserve.unisys.com/demo/dashboard]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:scripts.TestValidLogin@3b938003]" name="endReport" is-config="true" duration-ms="420" started-at="2019-11-17T11:36:32Z" finished-at="2019-11-17T11:36:32Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:scripts.TestValidLogin@5f9d02cb]" name="endReport" is-config="true" duration-ms="391" started-at="2019-11-18T09:51:54Z" finished-at="2019-11-18T09:51:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- scripts.TestValidLogin -->
       <class name="scripts.TestLoginWithoutValidation">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:scripts.TestLoginWithoutValidation@6f3b5d16]" name="openApplication" is-config="true" duration-ms="7284" started-at="2019-11-17T11:36:01Z" finished-at="2019-11-17T11:36:08Z">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:scripts.TestLoginWithoutValidation@63753b6d]" name="openApplication" is-config="true" duration-ms="6731" started-at="2019-11-18T09:51:26Z" finished-at="2019-11-18T09:51:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="validLoginValidatioin()[pri:0, instance:scripts.TestLoginWithoutValidation@6f3b5d16]" name="validLoginValidatioin" duration-ms="23847" started-at="2019-11-17T11:36:08Z" finished-at="2019-11-17T11:36:32Z">
+        <test-method status="PASS" signature="validLoginValidatioin()[pri:0, instance:scripts.TestLoginWithoutValidation@63753b6d]" name="validLoginValidatioin" duration-ms="20944" started-at="2019-11-18T09:51:33Z" finished-at="2019-11-18T09:51:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginValidatioin -->
-        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:scripts.TestLoginWithoutValidation@6f3b5d16]" name="closeBrowser" is-config="true" duration-ms="168" started-at="2019-11-17T11:36:32Z" finished-at="2019-11-17T11:36:32Z">
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:scripts.TestLoginWithoutValidation@63753b6d]" name="closeBrowser" is-config="true" duration-ms="402" started-at="2019-11-18T09:51:54Z" finished-at="2019-11-18T09:51:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validLoginValidatioin status=SUCCESS method=TestLoginWithoutValidation.validLoginValidatioin()[pri:0, instance:scripts.TestLoginWithoutValidation@6f3b5d16] output={null}]]]>
+                <![CDATA[[TestResult name=validLoginValidatioin status=SUCCESS method=TestLoginWithoutValidation.validLoginValidatioin()[pri:0, instance:scripts.TestLoginWithoutValidation@63753b6d] output={null}]]]>
               </value>
             </param>
           </params>

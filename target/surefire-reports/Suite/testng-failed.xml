@@ -11,14 +11,6 @@
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- scripts.TestValidLogin -->
-      <class name="scripts.TestLoginWithoutValidation">
-        <methods>
-          <include name="openApplication"/>
-          <include name="endReport"/>
-          <include name="validLoginValidatioin"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- scripts.TestLoginWithoutValidation -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

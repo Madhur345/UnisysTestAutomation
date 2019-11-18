@@ -3,7 +3,5 @@ pompages\LoginPage.class
 generics\ExtentManager.class
 generics\IAutoConstant.class
 generics\BaseTest.class
-generics\EmailsUtils.class
 scripts\TestValidLogin.class
-generics\ExtentReporterNG.class
 scripts\TestLoginWithoutValidation.class
