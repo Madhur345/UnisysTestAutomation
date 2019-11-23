@@ -1,6 +1,5 @@
 generics\Lib.class
 pompages\LoginPage.class
-generics\ExtentManager.class
 generics\IAutoConstant.class
 generics\BaseTest.class
 scripts\TestValidLogin.class

@@ -3,6 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="ChromeTest(failed)">
     <classes>
+      <class name="scripts.TestLoginWithoutValidation">
+        <methods>
+          <include name="openApplication"/>
+          <include name="endReport"/>
+          <include name="validLoginValidatioin"/>
+          <include name="setextent"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- scripts.TestLoginWithoutValidation -->
       <class name="scripts.TestValidLogin">
         <methods>
           <include name="openApplication"/>
